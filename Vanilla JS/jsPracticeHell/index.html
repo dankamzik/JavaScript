@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <style type="text/css" media="screen, print">
+    @font-face {
+      font-family: Geomanist;
+      src: url(Geomanist-Regular.otf);
+    }
+
+    <style>#container {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      background: #111111;
+    }
+
+    #animate {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      /* background-color: white; */
+      background-image: url('./pics/dan.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+  <meta charset="utf-8">
+  <title>Daniel Kamzik Web Development Solutions</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    var looper;
+    var degrees = 0;
+
+    function rotateAnimation(el, speed) {
+      var elem = document.getElementById(el);
+      elem.style.transform = "rotate(" + degrees + "deg)";
+      looper = setTimeout('rotateAnimation(\'' + el'\',' + speed + ')', speed);
+      degrees++;
+      if (degrees > 359) {
+        degrees = 1;
+      }
+      document.getElementById("status").innerHTML = "rotate(" + degrees + "deg)";
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container-fluid" id="headingContainer">
+    <div class="title" id="myHeading">
+      J4V4 | 5CR1P7 <br /><br />
+      H311
+    </div>
+  </div>
+  <div class="info-block col-md-12" id="infoSection">
+    <p>
+      Abondon all Hope, Ye Who Browse in Here.
+      <br />
+      <br />
+      My name is <b>Daniel Kamzik</b> and I am the Dark Lord of this Domain.<br />
+      <br />
+      I specialize in front-end web development and have knowlege of the adobe suite, interaction design, sound design
+      and so much more!<br />
+    </p>
+  </div>
+  <input type="text" id="myTextInput">
+  <button id="myButton">Input a color</button>
+
+  <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and
+    Time</button>
+
+  <p id="demo"></p>
+  <div class="container-fluid">
+    <div class="myList">
+      <li>Red</li>
+      <li>Blue</li>
+      <li>Green</li>
+      <li>Violet</li>
+      <li>Black</li>
+      <li>White</li>
+      <li>Orange</li>
+      <li>Grey</li>
+      <li>Gold</li>
+    </div>
+  </div>
+  <img id="img1" src="./pics/star.jpeg">
+  <p><button onclick="logoMove()">Click Me</button></p>
+
+  <div id="container">
+    <!-- <div img id ="animate" img src = "./pics/dan.jpg"></div> -->
+    <div id="animate">
+      <!--<img src = "./pics/dan.jpg" width="100%"/>-->
+    </div>
+  </div>
+
+  <script>rotateAnimation("img1", 200);</script>
+  <script src="script.js"></script>
+</body>
+
+</html>

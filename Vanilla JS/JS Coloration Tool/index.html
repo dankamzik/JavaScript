@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<!--
+Below is a useful JS tool that allows you to select a part(s) of a web page. You can then change the color of your selection(s) in real itme on the web page itself. This is a big time saver in seeing which colors look good together on a web page, rather than changing out CSS each time you want to change a color.
+
+ -->
+
+<html>
+  <head>
+    <title>JavaScript and the DOM</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1 id="myHeading">JavaScript and the DOM</h1>
+    <p>Making a web page interactive</p>
+    <input type="text" id="myTextInput">
+    <button id="myButton">Input a color</button>
+
+   <script>
+      const myHeading = document.getElementById('myHeading');
+      const myButton = document.getElementById('myButton');
+      const myTextInput = document.getElementById('myTextInput');
+
+
+      myButton.addEventListener('click', ()=> {
+          myHeading.style.color = myTextInput.value; });
+
+          <!--Now we replace 'red' with our id name. Because our element is now linked to the style and color of 'myHeading', we can now input a color and have it reflected in our HTML window when the button is clicked. -->
+
+    </script>
+  </body>
+</html>
