@@ -1,0 +1,1 @@
+This project is JS practice. I wanted to create a tool to help a person introspect on the way they are feeling at a given point in time. The user is given three disparate images to choose from and is instructed to think on how/why they made the choices that they did. Their choices are reflected at the end of the program.
