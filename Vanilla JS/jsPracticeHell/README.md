@@ -1,0 +1,1 @@
+  This project is a compilation of a bunch of JS features and events that you could potentially toss into a web page. My goal was to create a really bad page to naviagte that contains a bunch of features with no apparent rhyme or reason. Just practice and seeing what I see.
