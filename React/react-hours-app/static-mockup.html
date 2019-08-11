@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+
+  <body>
+    <div id="root">
+      <h1>Hours Sheet Application</h1>
+      <form>
+        <div class='date'>
+          <p>
+            Date:<br />
+            <input type="text" name="date">
+          </p>
+        <div class='service'>
+          <p>
+          Service: <br /> 
+          <input type="text" name="service">
+          </p>
+        </div>
+        <div class='rate'>
+          <p>
+          Rate: <br /> 
+          <input type="number" name="rate">
+          </p>
+        </div>
+        <div class='hours'>
+          <p>
+            Hours: <br />
+            <input type="number" name="hours">
+          </p>
+          </div>
+        <input type="submit" value="Submit">
+        <p> Subtotal:  <span id='subt'>0.00</span></p><br />
+        <p> Breakdown: <span id='brkdn'>0.00</span></p>
+      </form> 
+    </div>
+  
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type = "text/babel" src = "app.js"></script>
+  </body>
+</html>
