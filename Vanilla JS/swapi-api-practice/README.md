@@ -1,0 +1,1 @@
+For this project I used the SWAPI (Star Wars API) to pull information from online and display on cards in a web page. It features all of the vehicles from the Star Wars universe and provides the user with details about them.  
