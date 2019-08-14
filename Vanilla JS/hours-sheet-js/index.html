@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hours Sheet</title>
+ <!--   <link rel="stylesheet" href="./app.css" />-->
+  </head>
+
+  <body>
+      <h1>Hours Sheet Application</h1>
+      <form>
+        <div class='date'>
+          <p>
+          Date:<br />
+            <input type="text" name="date">
+          </p>
+        <div class='service'>
+          <p>
+          Service: <br /> 
+          <input type="text" name="service">
+          </p>
+        </div>
+        <div class='rate'>
+          <p>
+          Rate: <br /> 
+          <input type="number" name="rate" id="rate">
+          </p>
+        </div>
+        <div class='hours'>
+          <p>
+          Hours: <br />
+            <input type="number" name="hours" id="hours">
+          </p>
+        <!--<input type="submit" value="Submit">-->
+       <!-- <button onclick="getValue()">TOTAL</button>-->
+
+        <p> Subtotal:  <span id='subt'>0.00</span></p><br />
+        <p> Breakdown: <span id='brkdn'>0.00</span></p>
+      </form> 
+    </div>
+  
+    <script src="script.js"></script> 
+  </body>
+</html>
